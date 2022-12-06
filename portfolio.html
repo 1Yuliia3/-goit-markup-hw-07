@@ -22,33 +22,36 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body class="page-portfolio">
-    <header class="page-header">
-      <div class="container main-nav">
-        <a href="./index.html" class="logo"
-          ><span class="web">Web</span>Studio</a
+    <header class="header">
+      <div class="container main__nav">
+        <a href="./index.html" class="logo header__logo"
+          ><span class="web header__web">Web</span>Studio</a
         >
-        <nav class="site">
-          <ul class="site-nav">
-            <li class="item">
-              <a href="./index.html" class="nav-link">Студія</a>
+        <nav class="site header__site">
+          <ul class="site__nav">
+            <li class="site__item">
+              <a href="./index.html" class="nav__link current">Студія</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="nav-link current">Портфоліо</a>
+            <li class="site__item">
+              <a href="./portfolio.html" class="nav__link">Портфоліо</a>
             </li>
-            <li class="item"><a href="#" class="nav-link">Контакти</a></li>
+            <li class="site__item">
+              <a href="#" class="nav__link">Контакти</a>
+            </li>
           </ul>
         </nav>
-        <ul class="list-header">
-          <li class="item">
-            <a class="header-mail" href="mailto:info@devstudio.com">
+
+        <ul class="list__header">
+          <li class="list__item">
+            <a class="header__mail" href="mailto:info@devstudio.com">
               <svg class="envelope-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
-            <a class="header-contact" href="tel:+380961111111">
+          <li class="list__item">
+            <a class="header__contact" href="tel:+380961111111">
               <svg class="smartphone-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -299,31 +302,31 @@
 
     <footer>
       <div class="footer-container">
-        <div class="footer-address">
-          <div class="logo-web">
-            <a href="./index.html" class="footer-logo"
-              ><span class="footer-web">Web</span>Studio</a
+        <div class="footer__address">
+          <div class="logo__web">
+            <a href="./index.html" class="footer__logo"
+              ><span class="footer__web">Web</span>Studio</a
             >
           </div>
           <address>
             <div class="address">
-              <ul class="list-item">
-                <li class="item-add">
+              <ul class="list__item">
+                <li class="item__add">
                   <a
-                    class="footer-location"
+                    class="footer__location"
                     href="https://goo.gl/maps/7Pt5SD2hVirgwxjC6"
                     target="_blank"
                     rel="noopener noreferrer"
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li class="item-add">
-                  <a class="footer-mail" href="mailto:info@devstudio.com"
+                <li class="item__add">
+                  <a class="footer__mail" href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li class="item-add">
-                  <a class="footer-contact" href="tel:+380961111111"
+                <li class="item__add">
+                  <a class="footer__contact" href="tel:+380961111111"
                     >+38 096 111 11 11</a
                   >
                 </li>
@@ -331,32 +334,32 @@
             </div>
           </address>
         </div>
-        <div class="footer-social">
-          <span class="footer-title">приєднуйтесь</span>
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-link" href="#">
+        <div class="footer__social">
+          <span class="footer__title">приєднуйтесь</span>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a class="social-link" href="#">
+            <li class="social__item">
+              <a class="social__link" href="#">
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a class="social-link" href="#">
+            <li class="social__item">
+              <a class="social__link" href="#">
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a class="social-link" href="#">
+            <li class="social__item">
+              <a class="social__link" href="#">
                 <svg class="social-icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -364,20 +367,22 @@
             </li>
           </ul>
         </div>
-        <div class="e-mail-footer">
-          <p class="footer-title">Підпишіться на розсилку</p>
-          <form class="footer-form">
+        <div class="e-mail__footer">
+          <label class="footer__title" for="email-name"
+            >Підпишіться на розсилку</label
+          >
+          <form class="footer__form">
             <input
               type="email"
-              class="email-input"
+              class="email__input"
               name="email-name"
               id="email-name"
               placeholder="E-mail"
             />
-            <label for="email-name"></label>
-            <button type="button" class="subscribe-btn">
+
+            <button type="button" class="subscribe__btn">
               Підписатися
-              <svg class="modal-send-icon" width="24" height="24">
+              <svg class="modal-send__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
