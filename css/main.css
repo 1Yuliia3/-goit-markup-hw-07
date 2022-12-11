@@ -96,10 +96,6 @@ footer {
   list-style: none;
 }
 
-.current {
-  color: var(--accent-color);
-}
-
 .list__header {
   list-style: none;
 }
@@ -168,6 +164,10 @@ footer {
   border-radius: 2px;
 }
 .nav__link:hover, .nav__link:focus {
+  color: var(--accent-color);
+}
+
+.current {
   color: var(--accent-color);
 }
 
